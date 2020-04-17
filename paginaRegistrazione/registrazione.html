@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Food Skip - Nuova Registrazione</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="../css/bootstrap.css" rel="stylesheet"/>
+        <link href="signin.css" rel="stylesheet"/>
+        <script type="text/javascript" lang="javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript" lang="javascript" src="registrazione.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <body class="text-center">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #d8ecf3;">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../immagini/foodskip.png" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                </ul> 
+            </div>             
+        </nav>
+
+        <h1>Food Skip</h1>
+        <h5>Effettua una nuova registrazione</h5>
+        
+        <ul class="pagination justify-content-center">
+        <form name="reg">
+                <div class="form-row">
+                    <div class="form-group  col-md-6">
+                        <label >Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required name="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>Password</label>
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required name="passw"> 
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Nome</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Aldo" required name="nome">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label>Cognome</label>
+                      <input type="text" class="form-control" id="inputCognome" placeholder="Rossi" required name="cognome">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Username</label>
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Username" required name="username">
+                    </div>
+                </div>
+                <a class="btn btn-primary" href="../index.html" role="button" onclick="return registra();">Registrati</a>
+                <a class="btn btn-primary" href="../index.html" role="button">Home</a>
+        </form>
+        </ul>
+        <div class="fixed-bottom d-inline p-2 bg-primary text-white">
+                <h6>Built with ❤ by Simone e Lorenzo</h6>            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Skip - Mr Manzo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <script type="text/javascript" lang="javascript" src="../../js/bootstrap.min.js"></script>
+        <script type="text/javascript" lang="javascript" src="../../nostra_libreria/libreria_mrManzo.js"></script>
+    </head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <body class="text-center" onload="return ilTuoPiatto('il tuo piatto di carne', 15);">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #d8ecf3;">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../immagini/foodskip.png" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../pagina_Scelta_Ristoranti/lista_Ristoranti.html">Lista ristoranti</a>
+                    </li>
+                </ul>
+                <a href="../../pagina_Carrello_utente/carrello.html" class="btn btn-primary btn-lg align-bottom" role="button"><i class="fas fa-cart-plus"></i> Carrello</a>   
+            </div>                   
+        </nav>
+        <div class="media">
+            <img class="mr-3" src="logo_mrManzo.jpeg" alt="Generic placeholder image" width="20%">
+            <div class="media-body">
+                <h1 class="mt-0">Mr Manzo</h1>
+                <h4>"Il ristorante che non ti aspetti"</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#carni">Carni</a></li>
+                    <li class="list-group-item"><a href="#bibite">Bibite</a></li>
+                    <li class="list-group-item"><a href="#tavoli">Tavoli</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="list-group list-group-flush" id="carni">
+            <h2>CARNI</h2>
+            <li class="list-group-item"><h4>Tagliata di manzo 10,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Tagliata di manzo', 10.50);">Ordina</button></li>
+            <li class="list-group-item"><h4>Bistecca Fiorentina 20€</h4>4cm di spessore, 800gr <br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Bistecca fiorentina', 20);">Ordina</button></li>
+            <li class="list-group-item"><h4>BBQ Ribs 13€</h4>costine di maiale, salsa barbecue<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('BBQ Ribs', 13);">Ordina</button></li>
+            <li class="list-group-item"><h4>Tartare al naturale di manzo 8,50€</h4>manzo tagliato al coltello<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Tartare al naturale di manzo', 8.50);;">Ordina</button></li>
+            <li class="list-group-item"><h4>Salsiccia e crauti 6,50€</h4>salsiccia, crauti<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Salsiccia e crauti', 6.50);">Ordina</button></li>
+            <div id="tuoPiatto"></div>
+        </ul>
+        <br>
+        <ul class="list-group list-group-flush" id="bibite">
+            <h2>BIBITE</h2>
+            <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 1l', 1.50);">Ordina</button></li>
+            <li class="list-group-item"><h4>Acqua 0,50l 0,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 0,5l', 0.50);">Ordina</button></li>
+            <li class="list-group-item"><h4>Coca-cola 0,50l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola 0,5l', 3);">Ordina</button></li>
+            <li class="list-group-item"><h4>Coca-cola lattina 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola lattina', 2);">Ordina</button></li>
+            <li class="list-group-item"><h4>Fanta 0,50l 2,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta 0,5l', 2.50);">Ordina</button></li>
+            <li class="list-group-item"><h4>Fanta lattina 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta lattina', 1.50);">Ordina</button></li>
+        </ul>
+        <br>
+        <h2 id="tavoli">TAVOLI</h2>
+        <ul class="pagination justify-content-center">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Da 4 persone</h4>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tavolo1">
+                        <label class="form-check-label" for="tavolo1">
+                            Tavolo 1
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tavolo2">
+                        <label class="form-check-label" for="tavolo2">
+                            Tavolo 2
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tavolo3">
+                        <label class="form-check-label" for="tavolo3">
+                            Tavolo 3
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tavolo4">
+                        <label class="form-check-label" for="tavolo4">
+                            Tavolo 4
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tavolo5">
+                        <label class="form-check-label" for="tavolo5">
+                            Tavolo 5
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Da 6 persone</h4>
+                    <br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tavolo6">
+                        <label class="form-check-label" for="tavolo6">
+                            Tavolo 6
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tavolo7">
+                        <label class="form-check-label" for="tavolo7">
+                            Tavolo 7
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tavolo8">
+                        <label class="form-check-label" for="tavolo8">
+                            Tavolo 8
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    
+        <button type="button" class="btn btn-outline-primary" onclick="return prenotaTavoli();" id="butt_prenotaTavoli">Prenota</button></li>
+        <br><br><br><br><br>
+        <div class="fixed-bottom d-inline p-2 bg-primary text-white">
+            <h6>Built with ❤ by Simone e Lorenzo</h6>            
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+</html>
