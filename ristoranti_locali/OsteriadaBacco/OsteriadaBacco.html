@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Food Skip - Osteria da Bacco</title>
+        <title>GPU - Schede Video</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
-    <body class="text-center" onload="return ilTuoPiatto('il tuo piatto', 10);">
+<!--<body class="text-center" onload="return ilTuoPiatto('il tuo piatto', 10);"> -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #d8ecf3;">
             <a class="navbar-brand" href="../../index.html">
                 <img src="../../immagini/foodskip.png" height="50" alt="">
@@ -29,11 +29,12 @@
             </div>                   
         </nav>
         <div class="media">
-            <img class="mr-3" src="logo_osteria.jpeg" alt="Generic placeholder image" width="20%">
-            <div class="media-body">
-                <h1 class="mt-0">Osteria da Bacco</h1>
-                <h4>"La tradizione romana, servita in un piatto"</h4>
+<!--         <img class="mr-3" src="logo_osteria.jpeg" alt="Generic placeholder image" width="20%"> -->
+            <div class="media-body"><br>
+                <h1 class="mt-0">La nostra selezione</h1>
+                <h4>Qui troverai il meglio che il mercato ha da offrire</h4><br>
                 <ul class="list-group list-group-flush">
+                	<!--
                     <li class="list-group-item"><a href="#primi">Primi piatti</a></li>
                     <li class="list-group-item"><a href="#secondi">Secondi piatti</a></li>
                     <li class="list-group-item"><a href="#bibite">Bibite</a></li>
@@ -41,23 +42,143 @@
                 </ul>
             </div>
         </div>
+    -->
+		<br>    
         <ul class="list-group list-group-flush" id="primi">
-            <h2>PRIMI</h2>
-            <li class="list-group-item"><h4>Bucatini all'amatriciana 11€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Bucatini all\'amatriciana', 11);">Ordina</button></li>
-            <li class="list-group-item"><h4>Mezzemaniche alla carbonara 11€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Mezzemaniche alla carbonara', 11);">Ordina</button></li>
-            <li class="list-group-item"><h4>Gricia 10€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Gricia', 12);">Ordina</button></li>
-            <li class="list-group-item"><h4>Cacio e pepe 11€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Cacio e pepe', 11);">Ordina</button></li>
-            <div id="tuoPiatto"></div>
+            <h2>NVIDIA</h2>
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Geforce GTX 1660</h4><br>
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo e specifiche</h5>
+            			Inserisci specifiche<br><br>
+            			<b>inserisci prezzo</b><br><br>
+            			<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Bucatini all\'amatriciana', 11);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Geforce RTX 2060</h4><br>
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo e specifiche</h5>
+            			Inserisci specifiche<br><br>
+            			<b>inserisci prezzo</b><br><br>
+            			<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Mezzemaniche alla carbonara', 11);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+            <li class="list-group-item">
+
+            	<div class="container">
+            		<div class="row">
+            			<div class="col">
+            				<h4>Geforce RTX 2070</h4>
+            			</div>
+            			<div class="col">
+            				<h5>Prezzo e specifiche</h5>
+            				Inserisci specifiche<br><br>
+            				<b>inserisci prexzzo</b><br><br>
+            				<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Gricia', 12);">Ordina</button></li>
+            			</div>
+            		</div>
+            	</div>
+
+
+            <li class="list-group-item">
+
+            	<div class="container">
+            		<div class="row">
+            			<div class="col">
+            				<h4>Geforce RTX 2080</h4>
+            			</div>
+            			<div class="col">
+            				<h5>Prezzo e specifiche</h5>
+            				Inserisci specifiche<br><br>
+            				<b>inserisci prezzo</b><br><br>
+            				<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Cacio e pepe', 11);">Ordina</button></li>
+
+<!--        <div id="tuoPiatto"></div> -->
         </ul>
         <br>
         <ul class="list-group list-group-flush" id="secondi">
-            <h2>SECONDI</h2>
-            <li class="list-group-item"><h4>Coda alla vaccinara 14€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coda alla vaccinara', 14);">Ordina</button></li>
-            <li class="list-group-item"><h4>Ossobuco 11,30€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Ossobuco', 11.30);">Ordina</button></li>
-            <li class="list-group-item"><h4>Baccalà fritto 10€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Baccalà fritto', 10);">Ordina</button></li>
-            <li class="list-group-item"><h4>Trippa alla romana 11,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Trippa alla romana', 11.50);">Ordina</button></li>
-            
+            <h2>AMD</h2>
+
+
+            <li class="list-group-item">
+            	<div class="container">
+            		<div class="row">
+            			<div class="col">
+            				<h4>Radeon 5600XT</h4>
+            			</div>
+            			<div class="col">
+            				<h5>Prezzo e Specifiche</h5>
+            				Inserisci specifiche<br><br>
+            				<b>inserisci prezzo</b><br><br>
+            				<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coda alla vaccinara', 14);">Ordina</button></li>
+            			</div>
+            		</div>
+            	</div>
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Radeon 5700</h4>
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo e specifiche</h5>
+            			Inserisci specifiche<br><br>
+            			<b>inserisci prezzo</b><br><br>
+            			<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Ossobuco', 11.30);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+            <li class="list-group-item">
+
+            	<div class="container">
+            		<div class="row">
+            			<div class="col">
+            				<h4>Radeon 5700XT</h4>
+            			</div>
+            			<div class="col">
+            				<h5>Prezzo e specifiche</h5>
+            				Inserisci specifiche<<br><br>
+            				<b>inserisci prezzo</b><br><br>
+            			<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Baccalà fritto', 10);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+            <li class="list-group-item">
+
+            	<div class="container">
+            		<div class="row">
+            			<div class="col">
+            				<h4>Radeon Vega VII</h4>
+            			</div>
+            			<div class="col">
+            				<h5>Prezzo e specifiche</h5>
+            				Inserisci specifiche<br><br>
+            				<b>inserisci prezzo</b><br><br>
+            				<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Trippa alla romana', 11.50);">Ordina</button></li><br><br>
+            			</div>
+            		</div>
+            	</div>
         </ul>
+      	<!--
         <br>
         <ul class="list-group list-group-flush" id="bibite">
             <h2>BIBITE</h2>
@@ -132,6 +253,7 @@
     
         <button type="button" class="btn btn-outline-primary" onclick="return prenotaTavoli();" id="butt_prenotaTavoli">Prenota</button></li>
         <br><br><br><br><br>
+    -->
         <div class="fixed-bottom d-inline p-2 bg-primary text-white">
             <h6>Built with ❤ by Simone e Lorenzo</h6>            
         </div>
