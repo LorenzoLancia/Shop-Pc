@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Food Skip - I bracci del polpo</title>
+    <title>Mobo e RAM</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <script type="text/javascript" lang="javascript" src="../../js/bootstrap.min.js"></script>
@@ -12,10 +12,11 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
-<body class="text-center" onload="return ilTuoPiatto('il tuo primo di pesce', 15);">
+<!--
+    <body class="text-center" onload="return ilTuoPiatto('il tuo primo di pesce', 15);"> --> 
     <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #d8ecf3;">
         <a class="navbar-brand" href="../../index.html">
-            <img src="../../immagini/foodskip.png" height="50" alt="">
+        <!-- immagine logo -->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,11 +31,11 @@
         </div>                 
     </nav>
     <div class="media">
-        <img class="mr-3" src="logo_ristorante_di_pesce.jpg" alt="Generic placeholder image" width="20%">
+<!--     <img class="mr-3" src="logo_ristorante_di_pesce.jpg" alt="Generic placeholder image" width="20%"> -->
         <div class="media-body">
-            <h1 class="mt-0">I bracci del polpo</h1>
-            <h4>"Se vuoi mangiare pesce fresco vieni qui"</h4>
-            <ul class="list-group list-group-flush">
+            <h1 class="mt-0">La nostra selezione</h1>
+            <h4>Qui troverai il meglio che il mercato ha da offrire</h4>
+<!--        <ul class="list-group list-group-flush">
                 <li class="list-group-item"><a href="#antipasti">Antipasti</a></li>
                 <li class="list-group-item"><a href="#primi">Primi</a></li>
                 <li class="list-group-item"><a href="#secondi">Secondi</a></li>
@@ -42,30 +43,187 @@
                 <li class="list-group-item"><a href="#tavoli">Tavoli</a></li>
             </ul>
         </div>
-    </div>
+    </div> 
+-->
+    <br>
     <ul class="list-group list-group-flush" id="antipasti">
-        <h2>ANTIPASTI</h2>
-        <li class="list-group-item"><h4>Insalata di mare 5€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Insalata di mare', 5);">Ordina</button></li>
-        <li class="list-group-item"><h4>Antipasto di mare 7€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Antipasto di mare', 7);">Ordina</button></li>
+        <h2><center>RAM</center></h2><br>
+
+        <li class="list-group-item">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Banco da 8GB DDR4</h4>
+                        <img src="s-l300.jpg">
+                    </div>
+                    <div class="col">
+                        <h5>Prezzo e specifiche</h5>
+                        Inserisci specifiche<br><br>
+                        <b>80€</b><br><br>
+                        <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Insalata di mare', 5);">Ordina</button></li>
+                    </div>
+                </div>
+            </div>
+
+        <li class="list-group-item">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Banco da 16GB DDR4</h4>
+                        <img src="16.jpg" width="270" height="270">
+                    </div>
+                    <div class="col">
+                        <h5>Prezzo e specifiche</h5>
+                        specifiche<br><br>
+                        <b>120€</b><br><br>
+                        <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Antipasto di mare', 7);">Ordina</button></li>
+                    </div>
+                </div>
+            </div>
+
     </ul>
     <br>
     <ul class="list-group list-group-flush" id="primi">
-        <h2>PRIMI</h2>
-        <li class="list-group-item"><h4>Tonnarelli allo scoglio 12€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Tonnarelli allo scoglio', 12);">Ordina</button></li>
-        <li class="list-group-item"><h4>Spaghetti alle vongole 11,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Spaghetti alle vongole', 11.50);">Ordina</button></li>
-        <li class="list-group-item"><h4>Carbonara di pesce 13€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Carbonara di pesce', 13);">Ordina</button></li>
-        <li class="list-group-item"><h4>Risotto di pesce 10€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Risotto di pesce', 10);">Ordina</button></li>
-        <div id="tuoPiatto"></div>
+        <h2><center>Schede Madri Intel</center></h2>
+
+        <li class="list-group-item">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>MSI H310M</h4><br>
+                        <img src="h310.jpg" width="90%" height="90%">
+                    </div>
+                    <br>
+                    <div class="col">
+                        <h5>Prezzo</h5><br><br>
+                        <b>prezzo</b><br><br>
+                    <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Tonnarelli allo scoglio', 12);">Ordina</button></li>
+                </div>
+            </div>
+        </div>
+
+        <li class="list-group-item">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>ASUS B365-PLUS</h4><br>
+                        <img src="b360.png" width="300" height="300">
+                    </div>
+                    <div class="col">
+                        <h5>Prezzo</h5><br><br>
+                        <b>prezzo</b><br><br>
+                        <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Spaghetti alle vongole', 11.50);">Ordina</button></li>
+                    </div>
+                </div>
+            </div>
+
+
+        <li class="list-group-item">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Gigabyte Z390 UD</h4><br>
+                        <img src="z390.jpg" width="90%" height="90%">
+                    </div>
+                    <div class="col">
+                        <h5>Prezzo</h5><br><br>
+                        <b>prezzo</b><br><br>
+                        <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Carbonara di pesce', 13);">Ordina</button></li>
+                    </div>
+                </div>
+            </div>
+
+        <li class="list-group-item">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Gigabyte Z390 ELITE</h4>
+                    </div>
+                    <div class="col">
+                        <h5>Prezzo</h5><br><br>
+                        <b>prezzo</b><br><br>
+                        <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Risotto di pesce', 10);">Ordina</button></li>
+                    </div>
+                </div>
+            </div>
+
+<!--    <div id="tuoPiatto"></div> -->
     </ul>
     <br>
     <ul class="list-group list-group-flush" id="secondi">
-        <h2>SECONDI</h2>
-        <li class="list-group-item"><h4>Orata alla piastra 14€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Orata alla piastra', 14);">Ordina</button></li>
-        <li class="list-group-item"><h4>Filetto di pesce spada 15€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Filetto di pesce spada', 15);">Ordina</button></li>
-        <li class="list-group-item"><h4>Spiedini di pesce 16€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Spiedini di pesce', 16);">Ordina</button></li>
-        <li class="list-group-item"><h4>Sautè di cozze e vongole 12€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Sautè di cozze e vongole', 12);">Ordina</button></li>
+        <h2><center>Schede Madri AMD Ryzen</center></h2><br>
+
+
+        <li class="list-group-item">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Asrock B450M</h4>
+                    </div>
+                    <div class="col">
+                        <h5>Prezzo</h5><br><br>
+                        <b>prezzo</b><br><br>
+                        <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Orata alla piastra', 14);">Ordina</button></li>
+                    </div>
+                </div>
+            </div>
+
+
+        <li class="list-group-item">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Asus B450 PLUS</h4>
+                </div>
+                <div class="col">
+                    <h5>Prezzo</h5><br><br>
+                    <b>prezzo</b><br><br>
+                    <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Filetto di pesce spada', 15);">Ordina</button></li>
+                </div>
+            </div>
+        </div>
+
+        <li class="list-group-item">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Gigabyte B450 PRO</h4>
+                </div>
+                <div class="col">
+                    <h5>Prezzo</h5><br><br>
+                    <b>prezzo</b><br><br>
+                    <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Spiedini di pesce', 16);">Ordina</button></li>
+                </div>
+            </div>
+        </div>
+
+        <li class="list-group-item">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>MSI X470 PRO MAX</h4>
+                </div>
+                <div class="col">
+                    <h5>Prezzo</h5><br><br>
+                    <b>prezzo</b><br><br>
+                    <button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Sautè di cozze e vongole', 12);">Ordina</button></li>
+                </div>
+            </div>
+        </div>
+
     </ul>
     <br>
+    <!--
     <ul class="list-group list-group-flush" id="bibite">
         <h2>BIBITE</h2>
         <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 1l', 1.5);">Ordina</button></li>
@@ -196,6 +354,8 @@
     </ul>
     <button type="button" class="btn btn-outline-primary" onclick="return prenotaTavoli();" id="butt_prenotaTavoli">Prenota</button></li>
     <br><br><br><br><br>
+-->
+
     <div class="fixed-bottom d-inline p-2 bg-primary text-white">
         <h6>Built with ❤ by Simone e Lorenzo</h6>            
     </div>
