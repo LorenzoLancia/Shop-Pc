@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Food Skip - Armando</title>
+        <title>CPU - Processori</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
-    <body class="text-center" onload="return ilTuoPiatto('la tua pizza', 10);">
+<!--<body class="text-center" onload="return ilTuoPiatto('la tua pizza', 10);"> -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #d8ecf3;">
             <a class="navbar-brand" href="../../index.html">
                 <img src="../../immagini/foodskip.png" height="50" alt="">
@@ -29,40 +29,229 @@
             </div>                 
         </nav>
         <div class="media">
-            <img class="mr-3" src="pizzeria_napoletana.jpeg" alt="Generic placeholder image" width="20%">
-            <div class="media-body">
-                <h1 class="mt-0">Armando</h1>
-                <h4>"La vera pizzeria napoletana"</h4>
+            <img class="mr-3" src="cpu.jpeg" >
+            <div class="media-body"><br>
+                <h1 class="mt-0">La nostra selezione</h1>
+                <h4>Qui troverai il meglio che il mercato ha da offrire</h4>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="#pizze">Pizze</a></li>
-                    <li class="list-group-item"><a href="#bibite">Bibite</a></li>
-                    <li class="list-group-item"><a href="#tavoli">Tavoli</a></li>
+<!--            <li class="list-group-item"><a href="#pizze">Pizze</a></li>
+                <li class="list-group-item"><a href="#bibite">Bibite</a></li>
+                <li class="list-group-item"><a href="#tavoli">Tavoli</a></li>  -->
                 </ul>
             </div>
-        </div>
+        </div><br>
         <ul class="list-group list-group-flush" id="pizze">
-            <h2>PIZZE</h2>
-            <li class="list-group-item"><h4>Margherita 6€</h4>pomodoro, mozzarella, basilico<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Margherita', 6);">Ordina</button></li>
-            <li class="list-group-item"><h4>Marinara 5€</h4>pomodoro, aglio, acciughe<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Marinara', 5);">Ordina</button></li>
-            <li class="list-group-item"><h4>Diavola 7,50€</h4>pomodoro, mozzarella, salame piccante<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Diavola', 7.50);">Ordina</button></li>
-            <li class="list-group-item"><h4>Focaccia 3€</h4>olio, rosmarino<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Focaccia', 3);">Ordina</button></li>
-            <li class="list-group-item"><h4>Prosciutto e scamorza 7€</h4>prosciutto crudo, scamorza<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Prosciutto e scamorza', 7);">Ordina</button></li>
-            <li class="list-group-item"><h4>Salsiccia e funghi 8€</h4>salsiccia, funghi, mozzarella<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Salsiccia e funghi', 8);">Ordina</button></li>
-            <div id="tuoPiatto"></div>
+            <h2><center>PROCESSORI</center></h2>
+            <li class="list-group-item">
+
+            <div class="container">
+	            <div class="row">
+	            	<div class="col">
+	            		<h4>Ryzen 3 3200G</h4><br>
+	            		<img src="3200-2.png" width="250" height="250">
+	            	</div>
+	            	<div class="col">
+	            		<h5>Prezzo e specifiche</h5>
+	            		4 Core, 4 Thread, 3.6 GHz<br><br>
+	            		<b>100€</b><br><br>
+	            		<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Margherita', 6);">Ordina</button></li>
+	            	</div>
+            </div>
+            
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Intel i3 9100</h4><br>
+            			<img src="9100.jpg" widht="200" height="200">
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo e specifiche</h5>
+            			4 Core, 4 Thread, 3.6 GHz<br><br>
+            			<b>80€</b><br><br>
+            			<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Marinara', 5);">Ordina</button></li>
+        			</div>
+        		</div>
+        	</div>
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Ryzen 5 3600</h4><br>
+            			<img src="3600.jpeg" width="200" height="200">
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo e specifiche</h5>
+            			6 Core, 12 Thread, 3.6 GHz<br><br>
+            			<b>160€</b><br><br>
+            			<br><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Diavola', 7.50);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+            
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+						<h4>Intel i5 9600k</h4><br>
+						<img src="9600.jpg" width="200" height="200">
+					</div>
+					<div class="col">
+						<h5>Prezzo e specifiche</h5>
+						6 Core, 12 Thread, 3.6 GHz<br><br>
+						<b>200€</b><br><br>
+						<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Focaccia', 3);">Ordina</button></li>
+					</div>
+				</div>
+			</div>
+
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Ryzen 7 3700X</h4>
+            			<img src="3700.jpg" width="200" height="200">
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo e specifiche</h5>
+            			8 Core, 16 Thread, 3.6 GHz<br><br>
+            			<b>280€</b><br><br>
+            			<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Prosciutto e scamorza', 7);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Intel i7 9700k</h4>
+            			<img src="9700.jpg" width="200" height="200">
+            			</div>
+            			<div class="col">
+            				<h5>Prezzo e Specifiche</h5>
+            				8 Core, 8 Thread, 3.6 GHz<br><br>
+            				<b>350€</b><br><br>
+            				<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Salsiccia e funghi', 8);">Ordina</button></li>
+            			</div>
+            		</div>
+            	</div>
+
+
+ <!--       <div id="tuoPiatto"></div> -->
         </ul>
         <br>
         <br>
         <ul class="list-group list-group-flush" id="bibite">
-            <h2>BIBITE</h2>
-            <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 1l', 1.50);">Ordina</button></li>
-            <li class="list-group-item"><h4>Acqua 0,50l 0,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 0,5l', 0.50);">Ordina</button></li>
-            <li class="list-group-item"><h4>Coca-cola 0,50l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola 0,5l', 3);">Ordina</button></li>
-            <li class="list-group-item"><h4>Coca-cola lattina 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola lattina', 2);">Ordina</button></li>
-            <li class="list-group-item"><h4>Fanta 0,50l 2,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta 0,5l', 2.50);">Ordina</button></li>
-            <li class="list-group-item"><h4>Fanta lattina 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta lattina', 1.50);">Ordina</button></li>
+            <h2><center>DISSIPATORI</center></h2>
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Cooler Master Hyper 212 EVO</h4>
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo</h5><br><br>
+            			<b>40€</b><br><br>
+            		<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 1l', 1.50);">Ordina</button></li>
+            	</div>
+            </div>
+        </div>
+
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Noctua NHD15</h4>
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo</h5><br><br>
+            			<b>80</b><br><br>
+            		<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 0,5l', 0.50);">Ordina</button></li>
+            	</div>
+            </div>
+        </div>
+
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Noctua NHL12S</h4>
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo</h5><br><br>
+            			<b>60€</b><br><br>
+            		<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola 0,5l', 3);">Ordina</button></li>
+            	</div>
+            </div>
+        </div>
+
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Corsair H60</h4>
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo</h5><br><br>
+            			<b>90€</b><br><br>
+            			<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola lattina', 2);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Corsair H115i</h4>
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo</h5><br><br>
+            			<b>160€</b><br><br>
+            		<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta 0,5l', 2.50);">Ordina</button></li>
+            	</div>
+            </div>
+        </div>
+
+
+            <li class="list-group-item">
+
+            <div class="container">
+            	<div class="row">
+            		<div class="col">
+            			<h4>Corsair H150i</h4>
+            		</div>
+            		<div class="col">
+            			<h5>Prezzo</h5><br><br>
+            			<b>180€</b><br><br>
+            			<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta lattina', 1.50);">Ordina</button></li>
+            		</div>
+            	</div>
+            </div>
+
+
         </ul>
         <br>
-        <h2 id="tavoli">TAVOLI</h2>
+<!--    <h2 id="tavoli">TAVOLI</h2>
         <ul class="pagination justify-content-center">
             <div class="row">
                 <div class="col-sm-6">
@@ -125,6 +314,7 @@
         </ul>
         <button type="button" class="btn btn-outline-primary" onclick="return prenotaTavoli();" id="butt_prenotaTavoli">Prenota</button></li>
         <br><br><br><br><br>
+    -->
         <div class="fixed-bottom d-inline p-2 bg-primary text-white">
             <h6>Built with ❤ by Simone e Lorenzo</h6>            
         </div>
