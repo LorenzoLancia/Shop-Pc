@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Food Skisp</title>
+    <title>Shop-Pc</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
@@ -29,12 +29,11 @@
             </div>            
         </nav>
         
-        <!-- Inizio sezione primaria con immagine background -->
-
+        <!-- ======= Sezione Header  ======= -->
         <div class="header">
             <br><br>
             <img src="immagini/foodskip.png" height="70" alt="">
-            <h5>Quando l'attesa ti uccide, tu saltala!</h5> 
+            <h5>Aggiorna il tuo computer con Shop-Pc</h5> 
             <br><br>
 
             <div class="formbox">
@@ -52,9 +51,12 @@
                 </form>
             </div>
         </div>
-            
+        <!-- Fine Header -->  
+
         <br><br><br><br>
-        <h4>Scopri i nostri prodotti </h4>
+
+        <!-- ======= Sezione Prodotti  ======= -->
+        <h4><strong>Scopri i nostri prodotti</strong></h4>
         <br>
         <ul class="pagination justify-content-center">
         <div class="row">
@@ -131,9 +133,91 @@
                         </div>
             </div>
         </ul>
+        <!-- Fine sezione Prodotti -->
         <br><br>
 
-        <!-- Sezione orizzontale per Ristoratori -->
+        <!-- ======= Sezione F.A.Q  ======= -->
+        <h4><strong>Frequently Asked Questions</strong> </h4>
+
+        <ul class="pagination justify-content-center">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    A cosa serve Shop-Pc
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  Shop-Pc è un portale che mette a disposizione un catalogo di componenti computer che possa permetterti di aggiornare o assemblare il tuo computer semplicemente.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Che cos'è una Cpu?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  CPU è un acronimo che sta per central processing unit, cioè unità centrale di elaborazione. Sicuramente avrai sentito parlare anche di “processore” o “microprocessore”, che sono altri modi di definire la CPU. 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Che cos'è una GPU?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  La GPU è un ottimo esempio di coprocessore. Cioè è un processore che funziona come supporto alla CPU di un computer, dedicandosi all’elaborazione e al rendering di immagini grafiche. 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Che cos'è una mobo?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  La scheda madre è un circuito stampato (o PCB) ovvero un supporto che viene usato per connettere e mettere in comunicazione dei componenti in un circuito elettronico. 
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Che cos'è la RAM?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  La RAM è una memoria per computer ad accesso casuale, come puoi capire già dall’acronimo. RAM infatti sta per Random Access Memory, appunto memoria ad accesso casuale. 
+                </div>
+              </div>
+            </div>
+          </div>
+      </ul>
+    <!-- Fine sezione F.A.Q  -->
+    <br><br>
+
+        <!-- Sezione orizzontale per Aiuto -->
         <div class="section clearfix" style="background-color: #eff3f6;">
             <div class="container">
                 <div class="row lp-section-content clearfix">
@@ -149,16 +233,16 @@
                 </div>     
             </div>
         </div>
-
+        <!-- Fine sezione aiuto-->
         <br><br><br><br><br>
 
         
       <!-- Footer -->
       <footer class="page-footer font-small blue">
-          <div class="footer-copyright text-center py-3"  style="background-color: #82FF5C;"><stron>Made with ❤️ Riccardo e Lorenzo</stron>
+          <div class="footer-copyright text-center py-3"  style="background-color: #82FF5C;"><strong>Made with</strong> ❤️ Riccardo e Lorenzo
             </div>
         </footer>
-        <!-- Footer -->
+        <!-- Fine Footer -->
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
