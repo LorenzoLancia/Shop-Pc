@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,6 +10,24 @@
     </head>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	
+	<body>
+	
+	<?php 
+
+	$connect = mysqli_connect('localhost', 'root', '', 'cpu');
+	$query = 'SELECT * FROM products ORDERY by id ASC';
+
+	$result = mysqli_query($connect,$query);
+
+	if($result){
+		if(mysqli_num_rows($result)>0{
+			while($product = mysqli_fetch_assoc($result)){
+				print_r($product);
+				}
+			}
+		}
+		?>
 
 <!--<body class="text-center" onload="return ilTuoPiatto('la tua pizza', 10);"> -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">

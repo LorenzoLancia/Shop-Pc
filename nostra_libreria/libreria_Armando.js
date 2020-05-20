@@ -4,18 +4,18 @@
 */
 
 //variabili globali per le quantità dei prodotti
-var marg=0;
-var mar=0;
-var diav=0;
-var foc=0;
-var prosc=0;
-var sals=0;
-var a1l=0;
-var a05l=0;
-var coca=0;
-var cocaLattina=0;
-var fan=0;
-var fanLattina=0;
+var ryzen3=0;
+var intel3=0;
+var ryzen5=0;
+var intel5=0;
+var ryzen7=0;
+var intel7=0;
+var hyper212=0;
+var noctua15=0;
+var noctua12=0;
+var h60=0;
+var h115=0;
+var h150=0;
 var piatto=0;
 
 //variabile che contiene tutti gli ingredienti possibili per il piatto
@@ -23,13 +23,13 @@ var opz=["Pomodoro", "Salsiccia", "Patatine", "Formaggio", "Cotto", "Crudo", "Mo
 var listIngr="";
 
 function incrementa_quant(nome) {
-    if (nome=="Margherita") {
-        marg+=1;
-        return marg;
+    if (nome=="Ryzen 3 3200G") {
+        ryzen3+=1;
+        return ryzen3;
     }
-    if (nome=="Marinara") {
-        mar+=1;
-        return mar;
+    if (nome=="Intel i3 9100") {
+        intel3+=1;
+        return intel3;
     }
     if (nome=="Diavola") {
         diav+=1;
