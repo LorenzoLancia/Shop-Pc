@@ -19,8 +19,8 @@ var h150=0;
 var piatto=0;
 
 //variabile che contiene tutti gli ingredienti possibili per il piatto
-var opz=["Pomodoro", "Salsiccia", "Patatine", "Formaggio", "Cotto", "Crudo", "Mozzarella"];
-var listIngr="";
+// var opz=["Pomodoro", "Salsiccia", "Patatine", "Formaggio", "Cotto", "Crudo", "Mozzarella"];
+// var listIngr="";
 
 function incrementa_quant(nome) {
     if (nome=="Ryzen 3 3200G") {
@@ -35,46 +35,43 @@ function incrementa_quant(nome) {
         ryzen5+=1;
         return ryzen5;
     }
-    if (nome=="Focaccia") {
-        foc+=1;
-        return foc;
+    if (nome=="Intel i5 9600k") {
+        intel5+=1;
+        return intel5;
     }
-    if (nome=="Prosciutto e scamorza") {
-        prosc+=1;
-        return prosc;
+    if (nome=="Ryzen 7 3700X") {
+        ryzen7+=1;
+        return ryzen7;
     }
-    if (nome=="Salsiccia e funghi") {
-        sals+=1;
+    if (nome=="Intel i7 9700k") {
+        i+=1;
         return sals;
     }
-    if (nome=="Acqua 1l") {
-        a1l+=1;
-        return a1l;
+    if (nome=="Hyper 212") {
+        hyper212+=1;
+        return hyper212;
     }
-    if (nome=="Acqua 0,5l") {
-        a05l+=1;
+    if (nome=="Noctua NHD15") {
+        noctua15+=1;
         return a05l;
     }
-    if (nome=="Coca-cola 0,5l") {
-        coca+=1;
-        return coca;
+    if (nome=="Noctua NHD12S") {
+        noctua12+=1;
+        return noctua12;
     }
-    if (nome=="Coca-cola lattina") {
-        cocaLattina+=1;
-        return cocaLattina;
+    if (nome=="Corsair H60") {
+        h60+=1;
+        return h60;
     }
-    if (nome=="Fanta 0,5l") {
-        fan+=1;
-        return fan;
+    if (nome=="Corsair H115i") {
+        h115+=1;
+        return h115;
     }
-    if (nome=="Fanta lattina") {
-        fanLattina+=1;
-        return fanLattina;
+    if (nome=="Corsair H150i") {
+        h150+=1;
+        return h150;
     }
-    if (nome=="La tua pizza") {
-        piatto+=1;
-        return piatto;
-    }
+
 }
 
 function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionStorage, ma non mi va di riscrivere il codice :)
