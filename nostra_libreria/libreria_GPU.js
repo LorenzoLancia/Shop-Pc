@@ -4,81 +4,53 @@
 */
 
 //variabili globali per il mantenimento delle quantità
-var ama=0;
-var carbo=0;
-var gri=0;
-var cacio=0;
-var vacci=0;
-var osso=0;
-var bacca=0;
-var trippa=0;
-var acq=0;
-var bianco=0;
-var rosso=0;
-var coca=0;
-var fan=0;
-var piatto=0;
+var gtx1660=0;
+var rtx2060=0;
+var rtx2070=0;
+var rtx2080=0;
+var r5600xt=0;
+var r5700=0;
+var r5700xt=0;
+var vegavii=0;
 
-var opz=["Pasta", "Pancetta", "Pomodoro", "Uovo", "Parmigiano"];
-var listIngr="";
+
+//var opz=["Pasta", "Pancetta", "Pomodoro", "Uovo", "Parmigiano"];
+//var listIngr="";
 
 function incrementa_quant(nome) {
-    if (nome=="Bucatini all'amatriciana") {
-        ama+=1;
-        return ama;
+    if (nome=="GTX 1660") {
+        gtx1660+=1;
+        return gtx1660;
     }
-    if (nome=="Mezzemaniche alla carbonara") {
-        carbo+=1;
-        return carbo;
+    if (nome=="RTX 2060") {
+        rtx2060+=1;
+        return rtx2060;
     }
-    if (nome=="Gricia") {
-        gri+=1;
-        return gri;
+    if (nome=="RTX 2070") {
+        rtx2070+=1;
+        return rtx2070;
     }
-    if (nome=="Cacio e pepe") {
-        cacio+=1;
-        return cacio;
+    if (nome=="RTX 2080") {
+        rtx2080+=1;
+        return rtx2080;
     }
-    if (nome=="Coda alla vaccinara") {
-        vacci+=1;
-        return vacci;
+    if (nome=="5600XT") {
+        r5600xt+=1;
+        return r5600xt;
     }
-    if (nome=="Ossobuco") {
-        osso+=1;
-        return osso;
+    if (nome=="5700") {
+        r5700+=1;
+        return r5700;
     }
-    if (nome=="Baccalà fritto") {
-        bacca+=1;
-        return bacca;
+    if (nome=="5700XT") {
+        r5700xt+=1;
+        return r5700xt;
     }
-    if (nome=="Trippa alla romana") {
-        trippa+=1;
-        return trippa;
+    if (nome=="VEGA VII") {
+        vegavii+=1;
+        return vegavii;
     }
-    if (nome=="Acqua 1l") {
-        acq+=1;
-        return acq;
-    }
-    if (nome=="Vino bianco 0,75l") {
-        bianco+=1;
-        return bianco;
-    }
-    if (nome=="Vino rosso 0,75l") {
-        rosso+=1;
-        return rosso;
-    }
-    if (nome=="Coca-cola 0,5l") {
-        coca+=1;
-        return coca;
-    }
-    if (nome=="Fanta 0,5l") {
-        fan+=1;
-        return fan;
-    }
-    if (nome=="Il tuo piatto") {
-        piatto+=1;
-        return piatto;
-    }
+
 }
 
 function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionStorage, ma non mi va di riscrivere il codice :)
@@ -90,6 +62,7 @@ function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionSt
     alert("Hai ordinato:\n"+nome);
 }
 
+/**
 function scrivi_su_localStorage_tavoli(nome) {
     var prodotto={nome_locale: "Osteria da Bacco", nome_prodotto: nome, quantita: 1, prezzo_unitario: 0};
     var chiave=nome;
@@ -176,3 +149,5 @@ function addIngr(cibo) {
     ingrImg.appendChild(obj);
     return true;
 }
+
+**/
