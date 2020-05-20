@@ -12,7 +12,7 @@ function stampaTabellaDaStorage() {
         var p=JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));
         if (p.nome_locale!=null) {
             tab+='<tr><td data-th="Product">';
-            tab+='<div class="row"><div class="col-sm-10"><h4 class="nomargin">'+p.nome_prodotto+'</h4><small>'+p.nome_locale+'</div></div></td>';
+            tab+='<div class="row"><div class="col-sm-10"><h4 class="nomargin">'+p.nome_prodotto+'</h4><small></div></div></td>';
             tab+='<td data-th="Price">'+p.prezzo_unitario+' €</td>';
             tab+='<td data-th="Quantity">'+p.quantita+'</td>';
             tab+='<td data-th="Subtotal" class="text-center">'+p.prezzo_unitario*p.quantita+' €</td>';
