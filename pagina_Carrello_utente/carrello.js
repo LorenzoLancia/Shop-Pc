@@ -22,7 +22,7 @@ function stampaTabellaDaStorage() {
         }
     }
     tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Totale '+tot+' €</strong></td></tr>';
-    tab+='<tr><td><a href="../pagina_Scelta_Ristoranti/lista_Ristoranti.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continua ad ordinare</a></td>';
+    tab+='<tr><td><a href="../pagina_Catalogo/lista_Catalogo.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Torna al Catalogo</a></td>';
     tab+='<td><a href="../pagina_Pagamento_Ordine/pagamento.html" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>';
     tab+='<td><button class="btn btn-danger" onclick="return cancellaCarrello();">Svuota carrello</button></td></tr>';
     tab+="</tbody></table>";
