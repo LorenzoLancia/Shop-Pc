@@ -31,9 +31,9 @@ function incrementa_quant(nome) {
         intel3+=1;
         return intel3;
     }
-    if (nome=="Diavola") {
-        diav+=1;
-        return diav;
+    if (nome=="Ryzen 5 3600") {
+        ryzen5+=1;
+        return ryzen5;
     }
     if (nome=="Focaccia") {
         foc+=1;
