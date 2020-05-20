@@ -4,92 +4,63 @@
 */
 
 //variabili globali per il mantenimento delle quantità
-var ins=0;
-var ant=0;
-var tonn=0;
-var spag=0;
-var carb=0;
-var ris=0;
-var or=0;
-var fil=0;
-var spied=0;
-var sau=0;
-var acq=0;
-var bianco=0;
-var rosso=0;
-var coca=0;
-var fan=0;
-var piatto=0;
+var ram8=0;
+var ram16=0;
+var h310=0;
+var b365=0;
+var z390u=0;
+var z390e=0;
+var b450m=0;
+var b450pl=0;
+var b450pr=0;
+var x470=0;
 
 //variabili per la gestione della creazione del piatto
-var opz=["Pennette", "Spaghetti", "Pomodorini", "Cozze", "Vongole", "Cannolicchi", "Salmone"];
-var listIngr="";
+//var opz=["Pennette", "Spaghetti", "Pomodorini", "Cozze", "Vongole", "Cannolicchi", "Salmone"];
+//var listIngr="";
 
 function incrementa_quant(nome) {
-    if (nome=="Insalata di mare") {
-        ins+=1;
-        return ins;
+    if (nome=="8GB RAM DDR4") {
+        ram8+=1;
+        return ram8;
     }
-    if (nome=="Antipasto di mare") {
-        ant+=1;
-        return ant;
+    if (nome=="16GB RAM DDDR4") {
+        ram16+=1;
+        return ram16;
     }
-    if (nome=="Tonnarelli allo scoglio") {
-        tonn+=1;
-        return tonn;
+    if (nome=="MSI H310M") {
+        h310+=1;
+        return h310;
     }
-    if (nome=="Spaghetti alle vongole") {
-        spag+=1;
-        return spag;
+    if (nome=="ASUS B365-PLUS") {
+        b365+=1;
+        return b365;
     }
-    if (nome=="Carbonara di pesce") {
-        carb+=1;
-        return carb;
+    if (nome=="Gigabyte Z390UD") {
+        z390u+=1;
+        return z390u;
     }
-    if (nome=="Risotto di pesce") {
-        ris+=1;
-        return ris;
+    if (nome=="Gigabyte Z390 ELITE") {
+        z390e+=1;
+        return z390e;
     }
-    if (nome=="Orata alla piastra") {
-        or+=1;
-        return or;
+    if (nome=="Asrock B450M") {
+        b450m+=1;
+        return b450m;
     }
-    if (nome=="Filetto di pesce spada") {
-        fil+=1;
-        return fil;
+    if (nome=="Asus B450 PLUS") {
+        b450pl+=1;
+        return b450pl;
     }
-    if (nome=="Spiedini di pesce") {
-        spied+=1;
-        return spied;
+    if (nome=="Gigabyte B450 PRO") {
+        b450pr+=1;
+        return b450pr;
     }
-    if (nome=="Sautè di cozze e vongole") {
-        sau+=1;
-        return sau;
+    if (nome=="MSI X470 PRO MAX") {
+        x470+=1;
+        return x470;
     }
-    if (nome=="Acqua 1l") {
-        acq+=1;
-        return acq;
-    }
-    if (nome=="Vino bianco 0,75l") {
-        bianco+=1;
-        return bianco;
-    }
-    if (nome=="Vino rosso 0,75l") {
-        rosso+=1;
-        return rosso;
-    }
-    if (nome=="Coca-cola 0,5l") {
-        coca+=1;
-        return coca;
-    }
-    if (nome=="Fanta 0,5l") {
-        fan+=1;
-        return fan;
-    }
-    if (nome=="Il tuo primo di pesce") {
-        piatto+=1;
-        return piatto;
-    }
+
 }
 
 function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionStorage, ma non mi va di riscrivere il codice :)
@@ -100,6 +71,8 @@ function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionSt
     sessionStorage.setItem(chiave, valore);
     alert("Hai ordinato:\n"+nome);
 }
+
+/**
 
 function scrivi_su_localStorage_tavoli(nome) {
     var prodotto={nome_locale: "I bracci del polpo", nome_prodotto: nome, quantita: 1, prezzo_unitario: 0};
@@ -223,3 +196,5 @@ function addIngr(cibo) {
     ingrImg.appendChild(obj);
     return true;
 }
+
+**/
