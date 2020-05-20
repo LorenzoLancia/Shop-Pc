@@ -1,48 +1,49 @@
 /*
     questa è una nostra libreria JavaScript per la gestione dei vari eventi
-    della paginaHamburgeria.html
+    della pagina armando.html
 */
 
 //variabili globali per le quantità dei prodotti
-var poll=0;
-var angu=0;
-var scott=0;
-var casa=0;
-var tart=0;
-var sals=0;
-var a1l=0;
-var a05l=0;
-var coca=0;
-var cocaLattina=0;
-var fan=0;
-var fanLattina=0;
+var ryzen3=0;
+var intel3=0;
+var ryzen5=0;
+var intel5=0;
+var ryzen7=0;
+var intel7=0;
+var hyper212=0;
+var noctua15=0;
+var noctua12=0;
+var h60=0;
+var h115=0;
+var h150=0;
 var piatto=0;
 
-var opz=["Hamburger", "Patatine", "Uovo", "Pancetta", "Insalata", "Pomodoro", "Formaggio"];
+//variabile che contiene tutti gli ingredienti possibili per il piatto
+var opz=["Pomodoro", "Salsiccia", "Patatine", "Formaggio", "Cotto", "Crudo", "Mozzarella"];
 var listIngr="";
 
 function incrementa_quant(nome) {
-    if (nome=="Hamburger di pollo") {
-        poll+=1;
-        return poll;
+    if (nome=="Ryzen 3 3200G") {
+        ryzen3+=1;
+        return ryzen3;
     }
-    if (nome=="Hamburger black angus") {
-        angu+=1;
-        return angu;
+    if (nome=="Intel i3 9100") {
+        intel3+=1;
+        return intel3;
     }
-    if (nome=="Hamburger di scottona") {
-        scott+=1;
-        return scott;
+    if (nome=="Ryzen 5 3600") {
+        ryzen5+=1;
+        return ryzen5;
     }
-    if (nome=="Hamburger della casa") {
-        casa+=1;
-        return casa;
+    if (nome=="Focaccia") {
+        foc+=1;
+        return foc;
     }
-    if (nome=="Tartare al naturale di manzo") {
-        tart+=1;
-        return tart;
+    if (nome=="Prosciutto e scamorza") {
+        prosc+=1;
+        return prosc;
     }
-    if (nome=="Salsiccia e crauti") {
+    if (nome=="Salsiccia e funghi") {
         sals+=1;
         return sals;
     }
@@ -60,6 +61,7 @@ function incrementa_quant(nome) {
     }
     if (nome=="Coca-cola lattina") {
         cocaLattina+=1;
+        return cocaLattina;
     }
     if (nome=="Fanta 0,5l") {
         fan+=1;
@@ -69,7 +71,7 @@ function incrementa_quant(nome) {
         fanLattina+=1;
         return fanLattina;
     }
-    if (nome=="Il tuo hamburger") {
+    if (nome=="La tua pizza") {
         piatto+=1;
         return piatto;
     }
@@ -77,15 +79,16 @@ function incrementa_quant(nome) {
 
 function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionStorage, ma non mi va di riscrivere il codice :)
     //questa funzione scrive sul localStorage le varie cose ordinate
-    var prodotto={nome_locale: "Hamburgeria", nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
+    var prodotto={nome_locale: "Armando", nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     sessionStorage.setItem(chiave, valore);
     alert("Hai ordinato:\n"+nome);
 }
+/**
 
 function scrivi_su_localStorage_tavoli(nome) {
-    var prodotto={nome_locale: "Hamburgeria", nome_prodotto: nome, quantita: 1, prezzo_unitario: 0};
+    var prodotto={nome_locale: "Armando", nome_prodotto: nome, quantita: 1, prezzo_unitario: 0};
     var chiave=nome;
     var valore=JSON.stringify(prodotto);
     sessionStorage.setItem(chiave, valore);
@@ -141,35 +144,34 @@ function opzPiatto() {
     var tab="";
     var larg=100/l;
     tab+="<li class='list-group-item'>";
-    tab+="<h4>Questi sono gli ingredienti che puoi aggiungere al tuo hamburger</h4><small class='form-text text-muted'>Le immagini sono puramente illustrative</small>";
+    tab+="<h4>Questi sono gli ingredienti che puoi aggiungere alla tua pizza</h4><small class='form-text text-muted'>Le immagini sono puramente illustrative</small>";
     for (i=0; i<l; i++) {
-        tab+='<button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button>';
+        tab+='<button type="button" class="btn btn-outline-success" onclick="return addIngr(\''+opz[i]+'\');">'+opz[i]+'</button>        ';
     }
     tab+="<br>";
-    tab+="<img src='parte_superiore.png' height='70px'>";
-    tab+="<div id='panino'></div>";
-    tab+="<img src='parte_inferiore.png' height='70px'><br><br>";
-    tab+="<h5>Il tuo hamburger è composto da:</h5>";
-    tab+="<div id=\"mioHamburger\"></div>";
+    tab+="<div id='pizza'></div>";
+    tab+="<img src='Base_bianca.png' height='100px' width='100%'><br><br>";
+    tab+="<h5>La tua pizza è composta da:</h5>";
+    tab+="<div id=\"miaPizza\"></div>";
     tab+="<br>";
-    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'Il tuo hamburger\', 12);">Ordina</button></li>';
+    tab+='<button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage(\'La tua pizza\', 10);">Ordina</button></li>';
     document.getElementById("tuoPiatto").innerHTML=tab;
     return true;
 }
 
 function addIngr(cibo) {
-    var lista=document.getElementById("mioHamburger");
+    var lista=document.getElementById("miaPizza");
     if (listIngr!="") {
         listIngr+=", ";
     }
     listIngr+=cibo;
     lista.innerHTML=listIngr;
-    var bk=document.createElement("br");
-    var ingrImg=document.getElementById("panino");
+    var ingrImg=document.getElementById("pizza");
     var obj=document.createElement("img");
     obj.setAttribute("src", cibo+".png");
     obj.setAttribute("height", "100px");
     ingrImg.appendChild(obj);
-    ingrImg.appendChild(bk);
     return true;
 }
+
+**/
