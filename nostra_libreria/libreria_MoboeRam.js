@@ -20,11 +20,11 @@ var x470=0;
 //var listIngr="";
 
 function incrementa_quant(nome) {
-    if (nome=="8GB RAM DDR4") {
+    if (nome=="8GB DDR4") {
         ram8+=1;
         return ram8;
     }
-    if (nome=="16GB RAM DDDR4") {
+    if (nome=="16GB DDDR4") {
         ram16+=1;
         return ram16;
     }
