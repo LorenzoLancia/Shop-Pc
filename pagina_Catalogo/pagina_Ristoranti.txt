@@ -1,1 +1,0 @@
-In questa pagina ci saranno una lista di ristoranti che l'utente, ormai registrato, portrà scegliere per poi effettuare la visione del menù.
