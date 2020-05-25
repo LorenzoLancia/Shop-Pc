@@ -12,6 +12,8 @@ function checkStringIsEmpty(str) {
     }
 }
 
+// funzione che verifica se la carta è valida o meno, no se esiste realmente!
+
 function checkForm() {
     var nome=document.getElementById("nomeCarta").value;
     if (checkStringIsEmpty(nome)) {
