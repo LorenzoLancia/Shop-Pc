@@ -12,8 +12,7 @@
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 
-<!--
-    <body class="text-center" onload="return ilTuoPiatto('il tuo primo di pesce', 15);"> --> 
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="../../index.html">
         <!-- immagine logo -->
@@ -31,20 +30,11 @@
         </div>                 
     </nav>
     <div class="media">
-<!--     <img class="mr-3" src="logo_ristorante_di_pesce.jpg" alt="Generic placeholder image" width="20%"> -->
+
         <div class="media-body">
             <h1 class="mt-0">La nostra selezione</h1>
             <h4>Qui troverai il meglio che il mercato ha da offrire</h4>
-<!--        <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="#antipasti">Antipasti</a></li>
-                <li class="list-group-item"><a href="#primi">Primi</a></li>
-                <li class="list-group-item"><a href="#secondi">Secondi</a></li>
-                <li class="list-group-item"><a href="#bibite">Bibite</a></li>
-                <li class="list-group-item"><a href="#tavoli">Tavoli</a></li>
-            </ul>
-        </div>
-    </div> 
--->
+
     <br>
     <ul class="list-group list-group-flush" id="antipasti">
         <h2><center>RAM</center></h2><br>
@@ -154,7 +144,7 @@
                 </div>
             </div>
 
-<!--    <div id="tuoPiatto"></div> -->
+
     </ul>
     <br>
     <ul class="list-group list-group-flush" id="secondi">
@@ -228,138 +218,7 @@
 
     </ul>
     <br>
-    <!--
-    <ul class="list-group list-group-flush" id="bibite">
-        <h2>BIBITE</h2>
-        <li class="list-group-item"><h4>Acqua 1l 1,50€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Acqua 1l', 1.5);">Ordina</button></li>
-        <li class="list-group-item"><h4>Vino bianco della casa 0,75l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Vino bianco 0,75l', 3);">Ordina</button></li>
-        <li class="list-group-item"><h4>Vino rosso della casa 0,75l 3€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Vino rosso 0,75l', 3);">Ordina</button></li>
-        <li class="list-group-item"><h4>Coca-cola 0,5l 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Coca-cola 0,5l', 2);">Ordina</button></li>
-        <li class="list-group-item"><h4>Fanta 0,5l 2€</h4><button type="button" class="btn btn-outline-primary" onclick="return scrivi_su_localStorage('Fanta 0,5l', 2);">Ordina</button></li>
-    </ul>
-    <br>
-    <h2 id="tavoli">TAVOLI</h2>
-    <ul class="pagination justify-content-center">
-        <div class="row">
-            <div class="col-sm-4">
-                <h4>Da 4 persone</h4>
-                <br>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo1">
-                    <label class="form-check-label" for="tavolo1">
-                        Tavolo 1
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo2">
-                    <label class="form-check-label" for="tavolo2">
-                        Tavolo 2
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo3">
-                    <label class="form-check-label" for="tavolo3">
-                        Tavolo 3
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo4">
-                    <label class="form-check-label" for="tavolo4">
-                        Tavolo 4
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo5">
-                    <label class="form-check-label" for="tavolo5">
-                        Tavolo 5
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo6">
-                    <label class="form-check-label" for="tavolo6">
-                        Tavolo 6
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo7">
-                    <label class="form-check-label" for="tavolo7">
-                        Tavolo 7
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo8">
-                    <label class="form-check-label" for="tavolo8">
-                        Tavolo 8
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo9">
-                    <label class="form-check-label" for="tavolo9">
-                        Tavolo 9
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo10">
-                    <label class="form-check-label" for="tavolo10">
-                        Tavolo 10
-                    </label>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h4>Da 6 persone</h4>
-                <br>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo11">
-                    <label class="form-check-label" for="tavolo11">
-                        Tavolo 11
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo12">
-                    <label class="form-check-label" for="tavolo12">
-                        Tavolo 12
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo13">
-                    <label class="form-check-label" for="tavolo13">
-                        Tavolo 13
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo14">
-                    <label class="form-check-label" for="tavolo14">
-                        Tavolo 14
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo15">
-                    <label class="form-check-label" for="tavolo15">
-                        Tavolo 15
-                    </label>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <h4>Da 8 persone</h4>
-                <br>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo16">
-                    <label class="form-check-label" for="tavolo16">
-                        Tavolo 16
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="tavolo17">
-                    <label class="form-check-label" for="tavolo17">
-                        Tavolo 17
-                    </label>
-                </div>
-            </div>
-        </div>
-    </ul>
-    <button type="button" class="btn btn-outline-primary" onclick="return prenotaTavoli();" id="butt_prenotaTavoli">Prenota</button></li>
-    <br><br><br><br><br>
--->
+
 
    <!-- Footer -->
    <footer class="page-footer font-small blue">

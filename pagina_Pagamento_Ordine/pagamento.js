@@ -45,8 +45,8 @@ function checkForm() {
         alert("L'anno di scadenza deve essere un numero");
         return false;
     }
-    if (a<2019 || a>2099) {
-        alert("L'anno di scadenza deve essere un numero maggiore di 2018 e minore di 2099");
+    if (a<2020 || a>2099) {
+        alert("L'anno di scadenza deve essere un numero maggiore di 2019 e minore di 2099");
         return false;
     }
     var c=document.getElementById("cvv").value;
