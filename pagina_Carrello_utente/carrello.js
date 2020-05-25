@@ -10,7 +10,7 @@ function stampaTabellaDaStorage() {
     var i;
     for (i=0; i<l; i++) {
         var p=JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));
-        if (p.nome_locale!=null) {
+        
             tab+='<tr><td data-th="Product">';
             tab+='<div class="row"><div class="col-sm-10"><h4 class="nomargin">'+p.nome_prodotto+'</h4><small></div></div></td>';
             tab+='<td data-th="Price">'+p.prezzo_unitario+' €</td>';
@@ -19,7 +19,7 @@ function stampaTabellaDaStorage() {
             /*tab+='<td><button type="button" class="btn btn-danger">Cancella</button></td>';*/
             tab+='</tr>';
             tot+=p.prezzo_unitario*p.quantita;
-        }
+        
     }
     tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Totale '+tot+' €</strong></td></tr>';
     tab+='<tr><td><a href="../pagina_Catalogo/lista_Catalogo.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Torna al Catalogo</a></td>';

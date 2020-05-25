@@ -1,5 +1,8 @@
 
 //variabili globali per le quantità dei prodotti
+
+// vengono incrementate ogni volta che vengono aggiunte al carrello
+
 var ryzen3=0;
 var intel3=0;
 var ryzen5=0;
@@ -14,6 +17,8 @@ var h115=0;
 var h150=0;
 var piatto=0;
 
+// funzione che in base al nome ricevuto in input dalla pagina dei prodotti
+// incrementa la quantità del prodotto
 
 function incrementa_quant(nome) {
     if (nome=="Ryzen 3 3200G") {
@@ -67,9 +72,9 @@ function incrementa_quant(nome) {
 
 }
 
-function scrivi_su_localStorage(nome, prezzoUn) { //in realtà sarebbe sessionStorage, ma non mi va di riscrivere il codice :)
+function scrivi_su_localStorage(nome, prezzoUn) { 
     //questa funzione scrive sul localStorage le varie cose ordinate
-    var prodotto={nome_locale: "Armando", nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
+    var prodotto={ nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     sessionStorage.setItem(chiave, valore);

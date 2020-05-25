@@ -58,7 +58,7 @@ function incrementa_quant(nome) {
 
 function scrivi_su_localStorage(nome, prezzoUn) { 
     //questa funzione scrive sul localStorage le varie cose ordinate
-    var prodotto={nome_locale: "I bracci del polpo", nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
+    var prodotto={ nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     sessionStorage.setItem(chiave, valore);
