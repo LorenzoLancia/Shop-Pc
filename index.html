@@ -37,18 +37,21 @@
             <br><br>
 
             <div class="formbox">
+			<form action="login.php" method="post">
                 <form id="loginForm">        
                     <div class="form-group">
-                      <label>Inserisci email</label>
-                      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required>
+                      <label>Inserisci username</label>
+                      <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="username">
                       <small class="form-text text-muted">Non condivideremo mai la tua email.</small>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                      <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password"> 
                     </div>
-                    <a class="btn btn-primary" href="pagina_Catalogo/lista_Catalogo.html" role="button" onclick="return identificati();">Login</a>
+				<button type="submit" class="btn btn-primary"> Login </button>
+<!--            <a class="btn btn-primary" href="pagina_Catalogo/lista_Catalogo.html" role="button" onclick="return identificati();">Login</a>   -->
                 </form>
+				</form>
             </div>
         </div>
         <!-- Fine Header -->  

@@ -26,7 +26,7 @@ function identificati() {
                 n=o.nome;
                 c=o.cognome;
                 user=o.username;
-                var mess="Bentornato "+n+" "+c+"\nDetto anche: "+user;
+                var mess="Bentornato "+n+" "+c+"\nUsername: "+user;
                 alert(mess);
                 return true;
             }

@@ -4,7 +4,7 @@
 
 function controllaSeGiaPresente(e) {
     var i;
-    var l=localStorage.length;
+    var l=localStorage.length;  // contiene i dati degli utenti
     for (i=0; i<l; i++) {
         var o=JSON.parse(localStorage.getItem(localStorage.key(i)));
         if (o.email!=null && o.email==e) {
@@ -16,7 +16,7 @@ function controllaSeGiaPresente(e) {
 }
 
 function registra() {
-    var n, c, e, p, u;
+    var n, c, e, p, u;  // variabili di login
     e=document.getElementById("inputEmail").value;
     if (e=="") {
         alert("Inserisci un'email!");
@@ -36,7 +36,7 @@ function registra() {
     var ut={nome: n, cognome: c, email: e, password: p, username: u};
     var valore=JSON.stringify(ut);
     var chiave="Utente_"+e;
-    localStorage.setItem(chiave, valore);
+    localStorage.setItem(chiave, valore);  // scrive l'utente nello storage
     alert("Ti sei registrato con successo\nAccedi con le credenziali appena inserite");
     return true;
 }

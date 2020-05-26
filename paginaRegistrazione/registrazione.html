@@ -33,34 +33,36 @@
         <h5>Effettua una nuova registrazione</h5>
         
         <ul class="pagination justify-content-center">
+		<form action="registrazione.php" method="post">
         <form name="reg">
                 <div class="form-row">
                     <div class="form-group  col-md-6">
                         <label >Email</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required name="email">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
                     </div>
                     <div class="form-group col-md-6">
                         <label>Password</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required name="passw"> 
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password"> 
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-4">
                         <label>Nome</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Aldo" required name="nome">
+                        <input type="text" class="form-control" id="inputName" placeholder="Aldo" name="nome">
                     </div>
                     <div class="form-group col-md-4">
                       <label>Cognome</label>
-                      <input type="text" class="form-control" id="inputCognome" placeholder="Rossi" required name="cognome">
+                      <input type="text" class="form-control" id="inputCognome" placeholder="Rossi" name="cognome">
                     </div>
                     <div class="form-group col-md-4">
                         <label>Username</label>
-                        <input type="text" class="form-control" id="inputUsername" placeholder="Username" required name="username">
+                        <input type="text" class="form-control" id="inputUsername" placeholder="Username" name="username">
                     </div>
                 </div>
-                <a class="btn btn-primary" href="../index.html" role="button" onclick="return registra();">Registrati</a>
-                <a class="btn btn-primary" href="../index.html" role="button">Home</a>
-        </form>
+				<button type="submit" class="btn btn-primary"> Registra </button>
+
+		</form>
+		</form>
         </ul>
        <!-- Fine sezione Registrazione-->
 
