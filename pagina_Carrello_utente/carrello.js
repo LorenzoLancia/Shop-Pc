@@ -9,7 +9,7 @@ function stampaTabellaDaStorage() {
     tab+="<tbody>";
     var i;
     for (i=0; i<l; i++) {
-        var p=JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));
+        var p=JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));  // funzione che prende gli oggetti inseriti nel carrello
         
         tab+='<tr><td data-th="Product">';
         tab+='<div class="row"><div class="col-sm-10"><h4 class="nomargin">'+p.nome_prodotto+'</h4><small></div></div></td>';
