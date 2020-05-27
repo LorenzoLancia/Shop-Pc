@@ -22,7 +22,7 @@ function stampaTabellaDaStorage() {
     }
     tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Totale '+tot+' €</strong></td></tr>';
     tab+='<tr><td><a href="../pagina_Catalogo/lista_Catalogo.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Torna al Catalogo</a></td>';
-    tab+='<td><button onclick="return cancellaTutto();"><a href="../pagina_Pagamento_Ordine/pagamento.html" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></button></td>';
+    tab+='<td><button class="btn btn-success" onclick="return cancellaTutto();">Checkout <i class="fa fa-angle-right"></i></button></td>';
     tab+='<td><button class="btn btn-danger" onclick="return cancellaCarrello();">Svuota carrello</button></td></tr>';
     tab+="</tbody></table>";
     document.getElementById("tabella").innerHTML=tab;
