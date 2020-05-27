@@ -35,13 +35,13 @@ function cancellaTuttoLocalStorage() {
     return true;
 }
 
-function cancellaCarrello() {
+function cancellaCarrello() {   //funzione per svuotare il carrello con tasto "Svuota carrello"
     sessionStorage.clear();
     location.reload();
     return true;
 }
 
-function cancellaTutto(){
+function cancellaTutto(){   //funzione per svuotare il carrello quando si effettua il pagametno (Check)
     sessionStorage.clear();
     location.href="../pagina_Pagamento_Ordine/pagamento.html";
     return true;
