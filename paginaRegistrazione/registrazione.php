@@ -30,14 +30,14 @@ $num = mysqli_num_rows($result);
 if($num == 1){   // se esiste una riga 
 
 	echo "L'utente esiste già!";
-	// pagina fallito
+	header('location:reg_fallita.html');
 	
 }
 else{  // altrimenti lo inserisce nel database
 	$reg= "insert into utenti(email,password,nome,cognome,username) values ('$email', '$password','$nome','$cognome','$uname') ";
 	mysqli_query($con, $reg);
 	echo"Registrazione effettuata.";
-	// pagina okay
+	header('location:reg_successo.html');
 	
 }
 
