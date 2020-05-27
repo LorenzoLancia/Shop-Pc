@@ -17,7 +17,7 @@ $nome=$_POST['nome'];
 $cognome=$_POST['cognome'];
 $uname=$_POST['username'];
 
-$sql="select * from utenti where nome='$nome'";
+$sql="select * from utenti where nome='$nome'";  // nome uguale rip
 
 	
 $result=mysqli_query($con, $sql);
@@ -27,12 +27,14 @@ $num = mysqli_num_rows($result);
 if($num == 1){
 
 	echo "L'utente esiste già!";
+	// pagina fallito
 	
 }
 else{
 	$reg= "insert into utenti(email,password,nome,cognome,username) values ('$email', '$password','$nome','$cognome','$uname') ";
 	mysqli_query($con, $reg);
 	echo"Registrazione effettuata.";
+	// pagina okay
 	
 }
 
