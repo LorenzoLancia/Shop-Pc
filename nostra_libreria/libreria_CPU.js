@@ -42,8 +42,8 @@ function incrementa_quant(nome) {
         return ryzen7;
     }
     if (nome=="Intel i7 9700k") {
-        i+=1;
-        return sals;
+        intel7+=1;
+        return intel7;
     }
     if (nome=="Hyper 212") {
         hyper212+=1;
@@ -51,7 +51,7 @@ function incrementa_quant(nome) {
     }
     if (nome=="Noctua NHD15") {
         noctua15+=1;
-        return a05l;
+        return noctua15;
     }
     if (nome=="Noctua NHD12S") {
         noctua12+=1;
