@@ -17,7 +17,7 @@ $nome=$_POST['nome'];
 $cognome=$_POST['cognome'];
 $uname=$_POST['username'];
 
-$sql="select * from utenti where username='$username' && password = '$password'";
+$sql="select * from utenti where username='$uname' && password = '$password'";
 
 	
 $result=mysqli_query($con, $sql);
