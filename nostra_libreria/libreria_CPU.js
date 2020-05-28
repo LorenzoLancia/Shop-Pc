@@ -52,7 +52,7 @@ function incrementa_quant(nome) {
         noctua15+=1;
         return noctua15;
     }
-    if (nome=="Noctua NHD12S") {
+    if (nome=="Noctua NHL12S") {
         noctua12+=1;
         return noctua12;
     }
@@ -73,9 +73,10 @@ function incrementa_quant(nome) {
 
 function scrivi_su_localStorage(nome, prezzoUn) { 
     //questa funzione scrive sul localStorage i prodotti ordinati
+	// variabili che vengono riprese da carrello 
     var prodotto={ nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
-    var chiave=nome+"_"+"_"+prezzoUn;
-    var valore=JSON.stringify(prodotto);
+    var chiave=nome+"_"+"_"+prezzoUn; 
+    var valore=JSON.stringify(prodotto);  
     sessionStorage.setItem(chiave, valore);
     alert("Hai ordinato:\n"+nome);  //produce un allert visivo contente ciò che hai appena ordinato
 }

@@ -17,7 +17,7 @@ function stampaTabellaDaStorage() {
         tab+='<td data-th="Quantity">'+p.quantita+'</td>';
         tab+='<td data-th="Subtotal" class="text-center">'+p.prezzo_unitario*p.quantita+' €</td>';
         tab+='</tr>';
-        tot+=p.prezzo_unitario*p.quantita;
+        tot+=p.prezzo_unitario*p.quantita;  // prezzo preso dalla libreria * counter
         
     }
     tab+='<tfoot><tr class="visible-xs"><td class="text-center"><strong>Totale '+tot+' €</strong></td></tr>';
