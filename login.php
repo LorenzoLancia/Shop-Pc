@@ -1,3 +1,7 @@
+<!-- il login, per la natura del localhost, funziona solo sul pc dove risiede il server
+
+il login funziona come registrazione.php
+
 <?php
 
 session_start();
@@ -23,6 +27,8 @@ $sql="select * from utenti where username='$uname' && password = '$password'";
 $result=mysqli_query($con, $sql);
 
 $num = mysqli_num_rows($result);
+
+// controlla se esiste già un utente 
 
 if($num == 1){
 

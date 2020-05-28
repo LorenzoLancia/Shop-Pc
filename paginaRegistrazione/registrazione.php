@@ -1,3 +1,5 @@
+<!-- la registrazione, per la natura del localhost, funziona solo sul pc dove risiede il server
+
 <?php
 
 session_start();
@@ -27,13 +29,15 @@ $result=mysqli_query($con, $sql);
 
 $num = mysqli_num_rows($result);
 
+// controlla se l'utente esiste già nel database 
+
 if($num == 1){   // se esiste una riga 
 
 	echo "L'utente esiste già!";
-	header('location:reg_fallita.html');
+	header('location:reg_fallita.html');  // reinderizzato nella pagina reg fallita
 	
 }
-else{  // altrimenti lo inserisce nel database
+else{  // altrimenti lo inserisce nella tabella utenti tramite la insert
 	$reg= "insert into utenti(email,password,nome,cognome,username) values ('$email', '$password','$nome','$cognome','$uname') ";
 	mysqli_query($con, $reg);
 	echo"Registrazione effettuata.";
