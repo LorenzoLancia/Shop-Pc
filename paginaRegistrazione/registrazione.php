@@ -22,7 +22,7 @@ $nome=$_POST['nome'];
 $cognome=$_POST['cognome'];
 $uname=$_POST['username'];
 
-$sql="select * from utenti where username='$uname'";  // fa il check con username all'interno del database 
+$sql="select * from utenti where username='$uname'";  // fa il check con username ( chiave primaria della tabella ) all'interno del database 
 
 	
 $result=mysqli_query($con, $sql);
