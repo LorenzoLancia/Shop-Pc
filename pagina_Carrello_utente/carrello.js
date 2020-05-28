@@ -41,7 +41,7 @@ function cancellaCarrello() {   //funzione per svuotare il carrello con tasto "S
     return true;
 }
 
-function cancellaTutto(){   //funzione per svuotare il carrello quando si effettua il pagametno (Check)
+function cancellaTutto(){   //funzione per svuotare il carrello quando si effettua il pagametno (Checkout)
     sessionStorage.clear();
     location.href="../pagina_Pagamento_Ordine/pagamento.html";
     return true;

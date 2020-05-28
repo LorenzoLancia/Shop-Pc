@@ -1,5 +1,7 @@
 
 //variabili globali per il mantenimento delle quantità
+// vengono incrementate ogni volta che vengono aggiunte al carrello
+
 var ram8=0;
 var ram16=0;
 var h310=0;
@@ -11,6 +13,8 @@ var b450pl=0;
 var b450pr=0;
 var x470=0;
 
+// funzione che in base al nome ricevuto in input dalla pagina dei prodotti
+// incrementa la quantità del prodotto
 
 function incrementa_quant(nome) {
     if (nome=="8GB DDR4") {
@@ -57,11 +61,11 @@ function incrementa_quant(nome) {
 }
 
 function scrivi_su_localStorage(nome, prezzoUn) { 
-    //questa funzione scrive sul localStorage le varie cose ordinate
+    //questa funzione scrive sul localStorage i prodotti ordinati
     var prodotto={ nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     sessionStorage.setItem(chiave, valore);
-    alert("Hai ordinato:\n"+nome);
+    alert("Hai ordinato:\n"+nome); //produce un allert visivo contente ciò che hai appena ordinato
 }
 

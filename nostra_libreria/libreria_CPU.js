@@ -1,6 +1,5 @@
 
 //variabili globali per le quantità dei prodotti
-
 // vengono incrementate ogni volta che vengono aggiunte al carrello
 
 var ryzen3=0;
@@ -73,10 +72,10 @@ function incrementa_quant(nome) {
 }
 
 function scrivi_su_localStorage(nome, prezzoUn) { 
-    //questa funzione scrive sul localStorage le varie cose ordinate
+    //questa funzione scrive sul localStorage i prodotti ordinati
     var prodotto={ nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     sessionStorage.setItem(chiave, valore);
-    alert("Hai ordinato:\n"+nome);
+    alert("Hai ordinato:\n"+nome);  //produce un allert visivo contente ciò che hai appena ordinato
 }

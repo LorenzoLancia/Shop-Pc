@@ -1,5 +1,7 @@
 
 //variabili globali per il mantenimento delle quantità
+// vengono incrementate ogni volta che vengono aggiunte al carrello
+
 var gtx1660=0;
 var rtx2060=0;
 var rtx2070=0;
@@ -9,6 +11,8 @@ var r5700=0;
 var r5700xt=0;
 var vegavii=0;
 
+// funzione che in base al nome ricevuto in input dalla pagina dei prodotti
+// incrementa la quantità del prodotto
 
 
 function incrementa_quant(nome) {
@@ -48,11 +52,11 @@ function incrementa_quant(nome) {
 }
 
 function scrivi_su_localStorage(nome, prezzoUn) {
-    //questa funzione scrive sul localStorage le varie cose ordinate
+    //questa funzione scrive sul localStorage i prodotti ordinati
     var prodotto={ nome_prodotto: nome, quantita: incrementa_quant(nome), prezzo_unitario: prezzoUn};
     var chiave=nome+"_"+"_"+prezzoUn;
     var valore=JSON.stringify(prodotto);
     sessionStorage.setItem(chiave, valore);
-    alert("Hai ordinato:\n"+nome);
+    alert("Hai ordinato:\n"+nome); //produce un allert visivo contente ciò che hai appena ordinato
 }
 
