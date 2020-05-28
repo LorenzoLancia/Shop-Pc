@@ -21,4 +21,4 @@ Le funzionalità implimentate sono le seguenti:
 Per lo sviluppo di Shop-PC abbiamo utilizzato per il **front-end** librerie di [Bootstrap](https://getbootstrap.com/). Per quanto riguarda il lato **back-end** abbiamo utilizzato **JavaScript** per la gestione dei prodotti e del carrello e **PHP** per la gestione delle Registrazioni e Login.
 
 ## Contributori 
-@ricurraci e @LorenzoLancia
+@ ricurraci e @ LorenzoLancia
