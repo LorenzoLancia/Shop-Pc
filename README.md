@@ -22,5 +22,8 @@ Per lo sviluppo di Shop-PC abbiamo utilizzato per il **front-end** librerie di [
 Il progetto è interamente salvato su **localhost** tramite l'utilizzo del software [XAMPP](https://www.apachefriends.org/it/index.html), ed è accessibile via browser solamente dopo aver avviato il server nel programma appena citato.
 I dati degli utenti sono salvati nel database creato appositamente su **phpmyadmin**.
 
+## Funzionamento 
+Per una descrizione dettagliata del funzionamento del codice, consigliamo la lettura di [funzionamento.txt](https://github.com/LorenzoLancia/Shop-Pc/blob/master/funzionamento.txt) e per comprendere come dovrebbe essere la pagina del database, consigliamo la visione di [pagina database.png](https://github.com/LorenzoLancia/Shop-Pc/blob/master/pagina%20database.png)
+
 ## Contributori 
 Riccardo Urraci e Lorenzo Lancia
