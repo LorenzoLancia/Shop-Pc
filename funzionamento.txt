@@ -1,0 +1,27 @@
+Il sito è interamente salvato su localhost, gestito da XAMPP. 
+Per il suo corretto funzionamento ( login, registrazione utente ) è necessario che il server locale sia avviato.
+
+La homepage è index.html, la quale contiene principalmente il form di login e il bottone che reindirizza alla pagina 
+registrazione.html, oltre ad altre funzionalità puramente estetiche.
+
+registrazione.html contiene la form di registrazione e i dati inseriti dall'utente ( tutti identificati con l'attributo name all'interno 
+del codice html della form ) verranno passati a registrazione.php, la quale si occuperà di inserire i valori nella tabella lista_utenti
+del database utenti SE E SOLO SE lo username dell'utente non è presente nella tabella, in quanto chiave primaria della stessa.
+Se tutto va a buon fine, l'utente verrà reinderizzato alla pagina reg_successo.html che a sua volta lo reindirizzerà alla homepage,
+in caso contrario verrà reindirizzato a reg_fallita.html che lo riporterà nuovamente nella pagina di registrazione.
+
+Il login.php è gestito in maniera simile a registrazione.php, infatti l'utente potrà accedere al sito se e solo se username e password 
+inseriti nella form di index.html corrispondono, altrimenti dovrà tentare nuovamente. In caso di successo, l'utente verrà reinderizzato
+in lista_Catalogo, da dove potrà scegliere la pagina dei prodotti da selezionare.
+
+I prodotti sono tutti catalogati all'interno del loro rispettivo file .html ( es: cpu.html ) e ogni qual volta che l'utente clicca sul pulsante
+"ordina" la funzione scrivi_su_localStorage si occuperà di salvare il nome del prodotto e il prezzo all'interno del localStorage.
+Questa funzione è presente in libreria_"NomeCategoria".js, insieme alle variabili associate ai prodotti che servono per tenere conto 
+delle quantità degli stessi da inserire poi nel carrello, aumentandone il loro valore ogni volta che ne viene aggiunto uno.
+
+carrello.js non fa atro che mostrare i prodotti presenti nel localStorage con i loro relativi prezzi e dare a disposizione dell'utente 
+la possibilità di poter svuotare il carrello tramite l'apposito bottone.
+
+una volta fatto l'ordine e pagato ( sia in contanti che con carta ) l'utente verrà reinderizzato nella pagina di login e disconnesso
+dalla sessione.
+
