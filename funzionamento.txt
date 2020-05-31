@@ -25,3 +25,4 @@ la possibilità di poter svuotare il carrello tramite l'apposito bottone.
 una volta fatto l'ordine e pagato ( sia in contanti che con carta ) l'utente verrà reinderizzato nella pagina di login e disconnesso
 dalla sessione.
 
+https://github.com/LorenzoLancia/Shop-Pc
